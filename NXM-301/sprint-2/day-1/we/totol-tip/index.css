@@ -1,0 +1,90 @@
+#btn_cl {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+#btn_cl > div {
+  position: relative;
+}
+
+.tool_tip {
+  position: absolute;
+  background-color: rgba(6, 6, 6, 0.941);
+  height: 2.2rem;
+  width: 5rem;
+  text-align: center;
+}
+
+#lft + .tool_tip {
+  top: 0;
+  left: -5.5rem;
+  color: white;
+  /* color: white; */
+  text-align: center;
+  /* display: none; */
+  z-index: 1;
+}
+
+#rgt + .tool_tip {
+  top: 0;
+  right: -5.3rem;
+  display: none;
+  z-index: 1;
+  color: white;
+}
+
+#top + .tool_tip {
+  color: white;
+  top: -2.7rem;
+  display: none;
+  z-index: 1;
+}
+#btm + .tool_tip {
+  bottom: -2.7rem;
+  color: white;
+  display: none;
+  z-index: 1;
+}
+
+.lft_inner {
+  top: 0.8rem;
+  left: -0.8rem;
+}
+.lft_inner,
+.rgt_inner,
+.btm_inner,
+.top_inner {
+  background-color: rgba(9, 9, 9, 0.941);
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  /* z-index: 2; */
+  display: none;
+  transform: rotate(45deg);
+}
+
+.rgt_inner {
+  top: 0.8rem;
+  right: -0.5rem;
+  /* z-index: 2; */
+}
+
+.top_inner {
+  top: -0.7rem;
+  right: 1.5rem;
+}
+
+.btm_inner {
+  bottom: -0.7rem;
+  right: 2rem;
+}
